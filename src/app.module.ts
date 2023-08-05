@@ -18,10 +18,12 @@ import { ProjectSecurityModule } from './project_security/project_security.modul
 import { ChangeManagementService } from './change_management/change_management.service';
 import { ChangeManagementModule } from './change_management/change_management.module';
 import { IncidentService } from './incident/incident.service';
+import { TasksController } from './tasks/tasks.controller';
+import { TasksModule } from './tasks/tasks.module';
 
 @Module({
-  imports: [DbModule, RequirementsModule, IncidentModule, SensibilisationModule, ProjectSecurityModule, ChangeManagementModule],
-  controllers: [AppController, DbController, RequirementsController, IncidentController, SensibilisationController, ProjectSecurityController],
-  providers: [AppService, DbService, RequirementsService, ProjectSecurityService, ChangeManagementService, IncidentService],
+  imports: [DbModule, RequirementsModule, IncidentModule, SensibilisationModule, ProjectSecurityModule, ChangeManagementModule, TasksModule],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule { }

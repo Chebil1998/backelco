@@ -37,6 +37,17 @@ export class RequirementsController {
     async getcount(){
         return this.requirementService.tauxrequirement();
     }
+    @Get('requirementsexist')
+    async getcountexist(){
+        return this.requirementService.sumRequirementExist();
+    }
+
+    @Get('requirementssum')
+    async getcountall(){
+        return this.requirementService.sumRequirementAll();
+    }
+
+    
 
 
 }

@@ -49,7 +49,7 @@ export class RequirementsService {
 
     
 async sumRequirementExist():Promise<number>{
-return this.RequirementRepository.count({where:{status:'exist'}});
+    return this.RequirementRepository.count({where:{status:'Initial'}});
 
 }
 

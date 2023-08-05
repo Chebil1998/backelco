@@ -9,7 +9,7 @@ export class Sensibilisation {
 
     @PrimaryGeneratedColumn()
 
-    Id: number;
+    id: number;
 
 
     @Column()

@@ -48,7 +48,6 @@ export class IncidentService {
 
 async TauxIncident():Promise<number> {
   
-    // Exemple de logique factice pour illustrer
     const incidents = await this.getIncidents();
     const incident = await this.IncidentRepository.findOne({where:{NBSystem: Not(0)}});
 
